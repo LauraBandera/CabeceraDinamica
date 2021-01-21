@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    margin: 0 auto;
+    width: 40%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 0.5em;
+    height: 25px;
+    line-height: 25px;
+}
+
+#nav > li{
+    /*Para ponerlo uno al lado de otro*/
+    float: left;
+}
+
+#nav li ul{
+    /*Para ocultarlo*/
+    display: none;
+    /*Para después poder mover el siguiente ul*/
+    position: absolute;
+}
+
+#nav li:hover > ul{
+    display: block;
+}
+
+#fijo{
+    /*para poder mover los elemntos dentro de él*/
+    position:relative;
+}
+
+#esp{
+    /*Si lo movemos al 100% de su izquierda obtenemos ponerlo al lado porque se mueve el 100% de lo que ocupa el elemento de bloque*/
+    left:100%;
+    top: 0;
+    display: none;
+}
+
+/*funciona bien sin esto????*/
+#fijo:hover > ul{
+    display: block;
+}
